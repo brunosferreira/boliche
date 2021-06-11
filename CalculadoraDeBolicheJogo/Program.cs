@@ -40,7 +40,6 @@ namespace CalculadoraDeBolicheJogo
             foreach (var jogador in partida.Jogadores)
             {
                 Console.WriteLine(String.Format("resultado do jogador {0}", jogador.Nome));
-                //Console.WriteLine(String.Format("|-------|-------|-------|-------|-------|-------|-------|-------|-----------|"));
                 foreach (var jogada in jogador.Jogadas)
                 {
                     foreach(var bola in jogada.Bolas)
@@ -51,7 +50,6 @@ namespace CalculadoraDeBolicheJogo
                 }
                 Console.WriteLine(String.Format("a pontuação final do jogador é {0}", jogador.Pontuacao));
             }
-            //Console.WriteLine(String.Format("|-------|-------|-------|-------|-------|-------|-------|-------|-----------|"));
         }
     }
 }
