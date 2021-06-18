@@ -8,16 +8,22 @@ namespace CalculadoraDeBolicheTeste
 {
     public class JogadaTest
     {
+        public static Partida partida = new Partida(1);
+        public static Jogador jogador = new Jogador(1, "João");
+        public static JogadorPartida jogadorPartida = new JogadorPartida(1, jogador, partida);
+
         [Fact]
         public void DeveCriarUmaJogada()
         {
+
             var jogadaEsperada = new
             {
                 Id = 1,
-                NumeroDaRodada = 1
+                NumeroDaRodada = 1,
+                JogadorPartida = jogadorPartida
             };
             
-            var jogada = new Jogada(jogadaEsperada.Id, jogadaEsperada.NumeroDaRodada);
+            var jogada = new Jogada(jogadaEsperada.Id, jogadaEsperada.NumeroDaRodada, jogadaEsperada.JogadorPartida);
             
             jogadaEsperada.ToExpectedObject().ShouldMatch(jogada);
         }
@@ -27,7 +33,7 @@ namespace CalculadoraDeBolicheTeste
         [InlineData(-1)]
         public void NaoDeveCriarUmaJogadaComNumeroDaRodadaInvalida(int numeroDaRodada)
         {
-            Assert.Throws<ArgumentException>(() => new Jogada(1, numeroDaRodada));
+            Assert.Throws<ArgumentException>(() => new Jogada(1, numeroDaRodada, jogadorPartida));
         }
 
         [Fact]

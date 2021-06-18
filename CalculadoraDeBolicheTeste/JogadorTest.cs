@@ -23,27 +23,5 @@ namespace CalculadoraDeBolicheTeste
         {
             Assert.Throws<ArgumentException>(() => JogadorBuilder.Novo().ComNome(nome).Criar());
         }
-
-        [Fact]
-        public void DeveAdicionarUmaJogada()
-        {
-            var jogador = JogadorBuilder.Novo().Criar();
-            var jogadaEsperada = new Jogada(1, 1);
-
-            jogador.AdicionaJogada(jogadaEsperada);
-
-            jogadaEsperada.ToExpectedObject().ShouldMatch(jogador.Jogadas[0]);
-        }
-
-        [Fact]
-        public void NaoDeveAdicionarUmaJogadaJaAdicionada()
-        {
-            var jogador = JogadorBuilder.Novo().Criar();
-            var jogada = new Jogada(1, 1);
-            
-            jogador.AdicionaJogada(jogada);
-
-            Assert.Throws<ArgumentException>(() => jogador.AdicionaJogada(jogada));
-        }
     }
 }

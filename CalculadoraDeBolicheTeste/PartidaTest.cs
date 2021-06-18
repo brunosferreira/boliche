@@ -16,13 +16,5 @@ namespace CalculadoraDeBolicheTeste
             var partida = new Partida(partidaEsperada.Id);
             partidaEsperada.ToExpectedObject().ShouldMatch(partida);
         }
-
-        [Fact]
-        public void NaoDeveCriarPartidaComOMesmoJogadorMaisDeUmaVez()
-        {
-            var jogador = JogadorBuilder.Novo().Criar();
-            var partida = PartidaBuilder.Novo().ComJogador(jogador).Criar();
-            Assert.Throws<ArgumentException>(() => partida.AdicionaJogador(jogador));
-        }
     }
 }

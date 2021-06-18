@@ -22,8 +22,8 @@ namespace CalculadoraDeBoliche
 
         private void ValidaBola(int numero, int pinos, int pontuacaoAnterior)
         {
-            if(numero < 1 || numero > 2)
-                throw new ArgumentException("O número da bola informado não deve ser menor que 1 ou maior que 2.");
+            if(numero < 1 || numero > 3)
+                throw new ArgumentException("O número da bola informado não deve ser menor que 1 ou maior que 3.");
 
             if (pinos < 0 || pinos > 10)
                 throw new ArgumentException("A quantidade de pinos informada não deve ser menor que 0 ou maior que 10.");

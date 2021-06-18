@@ -12,6 +12,9 @@ namespace CalculadoraDeBolicheTeste._Builders
 
         private int Id = faker.Random.Number();
         private int NumeroDaRodada = faker.Random.Number(1, 10);
+        private Jogador Jogador = JogadorBuilder.Novo().Criar();
+        private Partida Partida = PartidaBuilder.Novo().Criar();
+        private JogadorPartida JogadorPartida;
 
         public static JogadaBuilder Novo()
         {
@@ -20,7 +23,8 @@ namespace CalculadoraDeBolicheTeste._Builders
 
         public Jogada Criar()
         {
-            return new Jogada(Id, NumeroDaRodada);
+            JogadorPartida = new JogadorPartida(1, Jogador, Partida);
+            return new Jogada(Id, NumeroDaRodada, JogadorPartida);
         }
 
         public JogadaBuilder ComNumeroDaRodada(int numeroDaRodada)

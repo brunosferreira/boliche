@@ -20,8 +20,8 @@ namespace CalculadoraDeBolicheTeste
         [Theory]
         [InlineData(-1)]
         [InlineData(0)]
-        [InlineData(3)]
-        public void NaoDeveCriarUmaBolaComNumeroMenorQueUmOuMaiorQueDois(int numero)
+        [InlineData(4)]
+        public void NaoDeveCriarUmaBolaComNumeroMenorQueUmOuMaiorQueTres(int numero)
         {
             Assert.Throws<ArgumentException>(() => new Bola(1, numero, 1));
         }
