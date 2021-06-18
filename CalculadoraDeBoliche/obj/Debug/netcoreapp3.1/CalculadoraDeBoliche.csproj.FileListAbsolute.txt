@@ -1,9 +1,0 @@
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\bin\Debug\netcoreapp3.1\CalculadoraDeBoliche.deps.json
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\bin\Debug\netcoreapp3.1\CalculadoraDeBoliche.dll
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\bin\Debug\netcoreapp3.1\CalculadoraDeBoliche.pdb
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\obj\Debug\netcoreapp3.1\CalculadoraDeBoliche.AssemblyInfoInputs.cache
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\obj\Debug\netcoreapp3.1\CalculadoraDeBoliche.AssemblyInfo.cs
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\obj\Debug\netcoreapp3.1\CalculadoraDeBoliche.csproj.CoreCompileInputs.cache
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\obj\Debug\netcoreapp3.1\CalculadoraDeBoliche.dll
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\obj\Debug\netcoreapp3.1\CalculadoraDeBoliche.pdb
-C:\Users\brunoferreira\Documents\Estudo\Boliche\CalculadoraDeBoliche\obj\Debug\netcoreapp3.1\CalculadoraDeBoliche.csprojAssemblyReference.cache
